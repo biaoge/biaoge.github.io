@@ -304,29 +304,39 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="安装-nodeJS"><a href="#安装-nodeJS" class="headerlink" title="安装 nodeJS"></a>安装 nodeJS</h3><p>首先，安装<a href="https://brew.sh/" target="_blank" rel="noopener">homebrew</a>.</p>
 <p>在terminal输入下面命令安装node</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ brew link node</span><br><span class="line">$ brew uninstall node</span><br><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>检查node安装是否成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>terminal输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>cd到一个你设置好的文件夹folderName，输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init Blog</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>安装依赖</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>启动服务器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>浏览器中打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>,见到如下界面</p>
-<p><img src="https://github.com/biaoge/Images/blob/master/Hexo_Init.png" alt="hexo"></p>
-<p>到此为止，已经搭建好了Hexo了。接下来在Github创建一个新repo, biaoge.github.io。</p>
-<p><img src="https://github.com/biaoge/Images/blob/master/biaogeIO.png" alt="biaoge.github.io"></p>
-<p>终端cd到Blog文件夹下，vim打开_config.yml，打开后往下滑到最后，修改成下边的样子：</p>
+<p>浏览器中打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>,见到如下界面<br></p>
+<p><img src="https://github.com/biaoge/Images/blob/master/Hexo_Init.png" alt="hexo"> <br></p>
+<p>到此为止，已经搭建好了Hexo了。接下来在Github创建一个新repo, biaoge.github.io。 <br></p>
+<p><img src="https://github.com/biaoge/Images/blob/master/biaogeIO.png" alt="biaoge.github.io"> <br></p>
+<p>终端cd到Blog文件夹下，vim打开_config.yml，打开后往下滑到最后，修改成下边的样子： </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/biaoge/biaoge.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>terminal在Blog路径下输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br><span class="line"></span><br><span class="line">如果hexo d 报错， 输入</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">重新执行hexo g； hexo d</span><br></pre></td></tr></table></figure>
 <p>然后输入你的github账号和密码。如果之前在gitHub上设置了ssh key。只用输入一次即可。</p>
+<p><br></p>
 <h3 id="安装theme"><a href="#安装theme" class="headerlink" title="安装theme"></a>安装theme</h3><p>terminal cd到Blog文件夹下，输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p><br></p>
 <p>至于更改theme内容比如名称、描述、头像等去修改blog/_config.yml文件和blog/themes/next/_config.yml文件中对应的属性名称即可， 不要忘记冒号:后加空格。 详情见<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">nextT</a>官方文档。</p>
+<p><br></p>
 <p>最终效果：<br><img src="https://github.com/biaoge/Images/blob/master/HexoNext.png" alt="hexo_with_next"></p>
+<p><br></p>
 
           
         
