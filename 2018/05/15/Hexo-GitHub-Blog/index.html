@@ -89,7 +89,7 @@
 <meta property="og:image" content="https://github.com/biaoge/Images/blob/master/Hexo_Init.png">
 <meta property="og:image" content="https://github.com/biaoge/Images/blob/master/biaogeIO.png">
 <meta property="og:image" content="https://github.com/biaoge/Images/blob/master/HexoNext.png">
-<meta property="og:updated_time" content="2018-05-15T21:24:15.702Z">
+<meta property="og:updated_time" content="2018-05-15T21:27:11.968Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-GitHub-Blog">
 <meta name="twitter:description" content="利用Hexo + Github 在Mac上搭建个人博客  Quick Start安装 nodeJS首先，安装homebrew. 在terminal输入下面命令安装node 123$ brew link node$ brew uninstall node$ brew install node 检查node安装是否成功 12$ npm -v$ node -v 安装 Hexoterminal输入 1$">
@@ -318,9 +318,9 @@
 <p>启动服务器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>浏览器中打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>,见到如下界面</p>
-<p><img src="https://github.com/biaoge/Images/blob/master/Hexo_Init.png" alt=""></p>
+<p><img src="https://github.com/biaoge/Images/blob/master/Hexo_Init.png" alt="hexo"></p>
 <p>到此为止，已经搭建好了Hexo了。接下来在Github创建一个新repo, biaoge.github.io。</p>
-<p><img src="https://github.com/biaoge/Images/blob/master/biaogeIO.png" alt=""></p>
+<p><img src="https://github.com/biaoge/Images/blob/master/biaogeIO.png" alt="biaoge.github.io"></p>
 <p>终端cd到Blog文件夹下，vim打开_config.yml，打开后往下滑到最后，修改成下边的样子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/biaoge/biaoge.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>terminal在Blog路径下输入：</p>
@@ -329,7 +329,7 @@
 <h3 id="安装theme"><a href="#安装theme" class="headerlink" title="安装theme"></a>安装theme</h3><p>terminal cd到Blog文件夹下，输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>至于更改theme内容比如名称、描述、头像等去修改blog/_config.yml文件和blog/themes/next/_config.yml文件中对应的属性名称即可， 不要忘记冒号:后加空格。 详情见<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">nextT</a>官方文档。</p>
-<p>最终效果：<br><img src="https://github.com/biaoge/Images/blob/master/HexoNext.png" alt=""></p>
+<p>最终效果：<br><img src="https://github.com/biaoge/Images/blob/master/HexoNext.png" alt="hexo_with_next"></p>
 
       
     </div>
