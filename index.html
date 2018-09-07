@@ -308,7 +308,9 @@
 <li>根据Devices创建Provisioning Profiles配置文件 (PP文件)</li>
 <li>设置Xcode 然后真机调试</li>
 </ol>
-<p>关于Certificate App IDs &amp; Profiles:<br>对于没有越狱的ios来说，只有被Apple approve并且通过app store安装的app才能在真机上运行。<br>Apple通过要求每一个app都有一个signed Apple Certificate。从App Store来的app都会捆绑一个Certificate，系统会在app运行前verify这个Certificate。</p>
+<font color="#A9A9A9"><br>关于Certificate App IDs &amp; Profiles:<br>对于没有越狱的ios来说，只有被Apple approve并且通过app store安装的app才能在真机上运行。<br>Apple通过要求每一个app都有一个signed Apple Certificate。从App Store来的app都会捆绑一个Certificate，系统会在app运行前verify这个Certificate。<br></font>
+
+
 <h3 id="创建App-ID"><a href="#创建App-ID" class="headerlink" title="创建App ID"></a>创建App ID</h3><p>打开<a href="https://developer.apple.com/" target="_blank" rel="noopener">苹果开发者官网</a>.，点击右边的Account（account记得买开发者账号的权限，一年99USD）。 点击Certificates，Identifiers &amp; Profiles <br><br><img src="https://raw.githubusercontent.com/biaoge/Images/master/AppIDS0.png" alt="Apple Developer Account"> </p>
 <p>创建App ID，点击右上角的+号 <br><br><img src="https://raw.githubusercontent.com/biaoge/Images/master/AppIDS1.png" alt="App ID create"></p>
 <p>设置App ID和App ID Suffix。App ID Suffix这里选Explicit App ID，表示明确的app id和Xcode项目中的Bundle ID对应。Wildcard App ID则是通用的app id，不需要和项目中的Bundle ID对应。<br><br><img src="https://raw.githubusercontent.com/biaoge/Images/master/AppIDS2.png" alt="App ID &amp; Suffix"></p>
